@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="낚시 생활 콘텐츠 프로토타입 프로젝트 상세 기록">
+  <meta name="theme-color" content="#07131b">
+  <title>낚시 생활 콘텐츠 — Guscal 포트폴리오</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../assets/js/main.js" defer></script>
+</head>
+<body class="detail-page">
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header dark-header" data-header>
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">G</span><span>GUSCAL</span></a>
+    <a class="back-link" href="../index.html#projects">← 프로젝트 목록</a>
+  </header>
+
+  <main id="main">
+    <section class="detail-hero">
+      <img src="../assets/images/hero-fishing.png" alt="단풍이 물든 강가의 낚시터 콘셉트 아트">
+      <div class="detail-overlay"></div>
+      <div class="wrap detail-title">
+        <p class="eyebrow">PROJECT 01 · WORK IN PROGRESS</p>
+        <h1>낚시 생활 콘텐츠<br><em>프로토타입</em></h1>
+        <p>낚는 손맛과 잡은 뒤의 선택을 하나의 반복 가능한 플레이 흐름으로 연결합니다.</p>
+      </div>
+    </section>
+
+    <section class="detail-meta section">
+      <div class="wrap meta-grid">
+        <div><span>ROLE</span><strong>Game Design<br>Prototyping</strong></div>
+        <div><span>ENGINE</span><strong>Unity 6<br>C# · URP</strong></div>
+        <div><span>FOCUS</span><strong>낚시 조작<br>생활 콘텐츠 루프</strong></div>
+        <div><span>STATUS</span><strong>Local Prototype<br>Playtest Ready</strong></div>
+      </div>
+    </section>
+
+    <section class="case-section section">
+      <div class="wrap case-grid">
+        <div class="case-label reveal"><span>01</span><h2>문제 정의</h2></div>
+        <div class="case-copy reveal">
+          <p class="lead">낚는 몇 초가 끝난 뒤에도, 물고기가 다음 행동을 만드는 자산으로 남게 할 수 있을까?</p>
+          <p>미니게임의 긴장감과 판매·수집·전시 같은 생활 콘텐츠가 분리되면 어느 한쪽은 보상을 위한 반복 작업이 됩니다. 이 프로젝트는 캐스팅부터 획득 이후의 선택까지 한 번의 루프로 설계했습니다.</p>
+          <blockquote>낚시는 보상을 받기 위한 관문이 아니라, 세계를 탐색하는 생활 행동이어야 한다.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="wide-media section reveal">
+      <img src="../assets/images/gameplay-safe.png" alt="안전 장력 구간에서 릴을 감는 실제 플레이 화면">
+      <p class="media-caption"><span>PLAY LOOP</span> 장력을 30~70% 구간에 유지하면서 릴을 감아 진행도를 올립니다.</p>
+    </section>
+
+    <section class="case-section section">
+      <div class="wrap case-grid">
+        <div class="case-label reveal"><span>02</span><h2>규칙의 수정</h2></div>
+        <div class="case-copy reveal">
+          <p class="lead">처음 규칙에서는 아무것도 하지 않는 것이 가장 좋은 전략이었습니다.</p>
+          <p>위험 상한만 피하면 안전하다는 규칙 때문에 입력을 놓고 장력을 낮게 유지해도 높은 점수를 받을 수 있었습니다. 안전 기준을 상한선이 아닌 중간 밴드로 바꾸고, 밴드 안에서 회전 입력이 들어올 때만 진행되도록 수정했습니다.</p>
+          <ul class="case-list">
+            <li><b>R2 / 마우스</b><span>라인 장력 조절</span></li>
+            <li><b>스틱 / 회전 드래그</b><span>안전 구간에서 릴링 진행</span></li>
+            <li><b>L2 / Shift</b><span>위험 장력을 낮추는 긴급 해제</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="media-pair wrap section">
+      <figure class="reveal"><img src="../assets/images/gameplay-danger.png" alt="장력이 위험 구간에 진입한 플레이 화면"><figcaption>높은 장력은 즉시 시각적 위험 신호로 전달됩니다.</figcaption></figure>
+      <figure class="reveal"><img src="../assets/images/gameplay-success.png" alt="물고기 포획 성공 결과 화면"><figcaption>포획 결과는 개별 물고기 데이터로 가방에 저장됩니다.</figcaption></figure>
+    </section>
+
+    <section class="case-section section soft-section">
+      <div class="wrap case-grid">
+        <div class="case-label reveal"><span>03</span><h2>낚은 뒤의 선택</h2></div>
+        <div class="case-copy reveal">
+          <p class="lead">같은 어종이라도 크기, 신선도, 획득 장소와 시간이 다른 하나의 개체로 다룹니다.</p>
+          <p>플레이어는 잡은 물고기를 바로 판매하거나, 보관하거나, 월드 전시대에 올릴 수 있습니다. 현재는 공유 경험의 모양을 검증하는 로컬 시연이며 멀티플레이 기능은 포함하지 않습니다.</p>
+        </div>
+      </div>
+      <div class="wrap gallery-three">
+        <figure class="reveal"><img src="../assets/images/life-inventory.png" alt="물고기 가방 화면"><figcaption>Inventory</figcaption></figure>
+        <figure class="reveal"><img src="../assets/images/life-shop.png" alt="물고기 상점 화면"><figcaption>Trade</figcaption></figure>
+        <figure class="reveal"><img src="../assets/images/life-display-world.png" alt="물고기 월드 전시대"><figcaption>Display</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="results section">
+      <div class="wrap">
+        <div class="case-label reveal"><span>04</span><h2>검증 결과</h2></div>
+        <div class="result-grid">
+          <div class="reveal"><strong>2,180</strong><span>최종 자동 검사 조건 통과</span></div>
+          <div class="reveal"><strong>4</strong><span>1024×768부터 1920×1080까지 검증</span></div>
+          <div class="reveal"><strong>0</strong><span>검증 중 예외 및 Assertion</span></div>
+        </div>
+        <p class="result-note reveal">자동 검사는 기능이 의도대로 동작하는지만 증명합니다. 조작이 자연스럽고 다시 하고 싶은지는 다음 사용자 플레이테스트에서 검증합니다.</p>
+      </div>
+    </section>
+
+    <section class="next-link section">
+      <div class="wrap">
+        <p class="eyebrow">RELATED FIELD NOTE</p>
+        <a href="../devlog/fishing-01.html"><span>개발 일지 01</span>낚는 순간에서 자랑하는 순간까지 <b>↗</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer compact-footer"><div class="wrap"><a href="../index.html">← 포트폴리오 홈</a><small>© <span data-year></span> GUSCAL</small></div></footer>
+</body>
+</html>
