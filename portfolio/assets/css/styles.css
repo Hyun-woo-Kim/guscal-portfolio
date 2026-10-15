@@ -26,7 +26,8 @@ button { font: inherit; }
 .site-header { position: fixed; inset: 0 0 auto; z-index: 50; height: var(--header); padding: 0 max(28px, calc((100vw - var(--max))/2)); display: flex; align-items: center; justify-content: space-between; color: #fff; background: rgba(5, 6, 7, .76); border-bottom: 1px solid rgba(200,205,208,.18); backdrop-filter: blur(16px); transition: height .25s, background .25s; }
 .site-header.scrolled { height: 64px; background: rgba(5, 6, 7, .96); }
 .brand { display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 14px; letter-spacing: .08em; }
-.brand-mark { width: 36px; aspect-ratio: 1; display: grid; place-items: center; border: 1px solid var(--silver); color: var(--aqua); background: linear-gradient(145deg, rgba(255,255,255,.12), transparent); font-size: 11px; border-radius: 50%; }
+.brand-mark { width: 36px; aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; border: 1px solid var(--silver); background: linear-gradient(145deg, rgba(255,255,255,.12), transparent); border-radius: 50%; }
+.brand-mark img { width: 27px; height: 27px; object-fit: contain; filter: invert(81%) sepia(88%) saturate(865%) hue-rotate(119deg) brightness(101%) contrast(102%); transform: translateY(2px); }
 .site-nav { display: flex; align-items: center; gap: 32px; font-size: 13px; }
 .site-nav a { position: relative; opacity: .82; }
 .site-nav a:not(.nav-cta)::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -6px; height: 1px; background: var(--aqua); transition: right .25s; }
